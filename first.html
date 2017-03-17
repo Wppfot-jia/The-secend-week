@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link href="./first.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="contain">
+            <div class="top">
+                <div class="top-middle">
+                    <img src="./img/title.png">
+                </div>
+                <div class="top-right">
+                    <!-- <img src="./img/top-right.png"> -->
+                    <span>Follow us on Facebook</span><span>,</span><span>Twitter and Flickr</span>
+                </div>
+
+                
+            </div>
+            <div class="nav">
+                <div class="nav-contain">
+                    <ul>
+                        <!-- <img src="./img/nav.png"> -->
+                        <li>HOME</li>
+                        <li>PORTFOLIO</li>
+                        <li>FULL WIDTH</li>
+                        <li>ARCHIVES</li>
+                        <li>DROPS</li>
+                        <li>BLOG</li>
+                        <li>CONTACT</li>
+                        <li><input type="text" value=""><img src="./img/search.png"></li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="image">
+               <div id="img_ul" class="image-contain">
+                    <img src="./img/fate-1.png" style="height:390px;width:1440px;">
+                    <img src="./img/fate-1.png" style="height:390px;width:1440px;">
+                    <img src="./img/fate-1.png" style="height:390px;width:1440px;">
+                    <img src="./img/fate-1.png" style="height:390px;width:1440px;">
+                    <!-- <img src="./img/fate-2.png" style="height:390px;width:1440px;">
+                    <img src="./img/fate-3.png" style="height:390px;width:1440px;">
+                    <img src="./img/game-1.png" style="height:390px;width:1440px;"> -->
+                </div>
+            </div>
+            <div class="bottom">
+                <ul >
+                    <li id="c1" value="1" onmouseout="re_color1()" onmouseover="ch_color1()" onclick="change(this)"></li>
+                    <li id="c2" value="2" onmouseout="re_color2()" onmouseover="ch_color2()" onclick="change(this)"></li>
+                    <li id="c3" value="3" onmouseout="re_color3()" onmouseover="ch_color3()" onclick="change(this)"></li>
+                    <li id="c4" value="4" onmouseout="re_color4()" onmouseover="ch_color4()" onclick="change(this)"></li>
+                </ul>
+            </div>
+            
+            <div class="bottom-contain">
+                <div class="bottom-line">
+                    
+                </div>
+                <img src="./img/shape.png">
+            </div>
+            
+        </div>
+    <script type="text/javascript">
+    function ch_color1(){
+        var c1 = $("c1");
+        c1.style.backgroundColor = "#292317";
+    }
+    function re_color1(){
+        var c1 = $("c1");
+        c1.style.backgroundColor = "#7f7b74";
+    }
+    function ch_color2(){
+        var c2 = $("c2");
+        c2.style.backgroundColor = "#292317";
+    }
+    function re_color2(){
+        var c2 = $("c2");
+        c2.style.backgroundColor = "#7f7b74";
+    }
+
+    function ch_color3(){
+        var c3 = $("c3");
+        c3.style.backgroundColor = "#292317";
+    }
+    function re_color3(){
+        var c3 = $("c3");
+        c3.style.backgroundColor = "#7f7b74";
+    }
+    
+    function ch_color4(){
+        var c4 = $("c4");
+        c4.style.backgroundColor = "#292317";
+    }
+    function re_color4(){
+        var c4 = $("c4");
+        c4.style.backgroundColor = "#7f7b74";
+    }
+
+
+
+
+
+
+
+
+        function change(mm){
+            var img_ul = $("img_ul");
+            var c1 = $("c1");
+            var c2 = $("c2");
+            var c3 = $("c3");
+            var c4 = $("c4");
+            if(mm.value == 1){
+                img_ul.style.left = "0px";
+            }else if(mm.value == 2){
+                img_ul.style.left = "-1440px";
+            }else if(mm.value == 3){
+                img_ul.style.left = "-2880px";
+            }else if(mm.value == 4){
+                img_ul.style.left = "-4320px";
+            }
+
+            if(mm.value == 1){
+                c1.style.backgroundColor = "#cc2357";
+                c2.style.backgroundColor = "#7f7b74";
+                c3.style.backgroundColor = "#7f7b74";
+                c4.style.backgroundColor = "#7f7b74";
+            }else if(mm.value == 2){
+                c1.style.backgroundColor = "#7f7b74";
+                c2.style.backgroundColor = "#cc2357";
+                c3.style.backgroundColor = "#7f7b74";
+                c4.style.backgroundColor = "#7f7b74";
+            }else if(mm.value == 3){
+                c1.style.backgroundColor = "#7f7b74";
+                c2.style.backgroundColor = "#7f7b74";
+                c3.style.backgroundColor = "#cc2357";
+                c4.style.backgroundColor = "#7f7b74";
+            }else if(mm.value == 4){
+                c1.style.backgroundColor = "#7f7b74";
+                c2.style.backgroundColor = "#7f7b74";
+                c3.style.backgroundColor = "#7f7b74";
+                c4.style.backgroundColor = "#cc2357";
+            }
+        }
+
+
+        setInterval("move()",3000);
+
+        var count = 0;
+        function move(){
+            var c1 = $("c1");
+            var c2 = $("c2");
+            var c3 = $("c3");
+            var c4 = $("c4");
+            if(count == 0){
+                c1.style.backgroundColor = "#cc2357";
+                c2.style.backgroundColor = "#7f7b74";
+                c3.style.backgroundColor = "#7f7b74";
+                c4.style.backgroundColor = "#7f7b74";
+            }else if(count == -1440){
+                c1.style.backgroundColor = "#7f7b74";
+                c2.style.backgroundColor = "#cc2357";
+                c3.style.backgroundColor = "#7f7b74";
+                c4.style.backgroundColor = "#7f7b74";
+            }else if(count == -2880){
+                c1.style.backgroundColor = "#7f7b74";
+                c2.style.backgroundColor = "#7f7b74";
+                c3.style.backgroundColor = "#cc2357";
+                c4.style.backgroundColor = "#7f7b74";
+            }else if(count == -4320){
+                c1.style.backgroundColor = "#7f7b74";
+                c2.style.backgroundColor = "#7f7b74";
+                c3.style.backgroundColor = "#7f7b74";
+                c4.style.backgroundColor = "#cc2357";
+            }
+            var img_ul = $("img_ul");
+            img_ul.style.left = count + "px";
+            count -= 1440; 
+            if(count == -5760){
+                count = 0;
+            }
+        }
+
+        function $(id){
+            return document.getElementById(id);
+        }
+    </script>
+    </body>
+</html>

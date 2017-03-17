@@ -1,0 +1,137 @@
+*{
+	padding:0;
+	margin:0;
+}
+body{
+	font-family:"Microsoft Yahei";
+}
+.contain{
+	width:1440px;
+	margin:0 auto;
+}
+.top{
+	width:100%;
+	height:100px;
+	border-bottom:2px solid #928f8b;
+}
+.top-middle{
+	width:50px;
+	height:50px;
+    transform:translate(-50%,0);
+    position:relative;
+    top:10px;
+	margin:0 auto;
+	font-size:50px;
+	letter-spacing:-5px;
+    font-weight:bold;
+}
+.top-right{
+	font-weight:bold;
+    font-style:italic;
+    font-size:12px;
+	width:281px;
+	height:20px;
+	float:right;
+	margin-top:-13px;
+	margin-right:200px;
+}
+.top-right span:hover{
+	color:red;
+	cursor:pointer;
+}
+
+
+
+
+
+
+.nav{
+	width:100%;
+	height:75px;
+}
+.nav-contain{
+	width:860px;
+	height:30px;
+    position:relative;
+    top:27px;
+	margin:0 auto;
+}
+.nav-contain li{
+	float:left;
+	list-style-type:none;
+	margin-left:20px;
+	font-weight:600;
+}
+.nav-contain input{
+	position:relative;
+	border:none;
+	outline:none;
+	border:1px solid silver;
+	top:-3px;
+	width:120%;
+	border-radius:3px;
+	height:23px; 
+}
+.nav-contain li:hover{
+	color:#aea9a9;
+	cursor:pointer;
+}
+.nav img{
+	position:relative;
+	left:184px;
+	top:-27px;
+}
+
+
+.image{
+	width:1440px;
+	height:390px;
+	overflow:hidden;
+}
+.image-contain{
+    width:5760px;
+	height:390px;
+	position:relative;
+	transition:all 2s; 
+}
+
+.image img{
+	position:relative;
+	float:left;
+}
+.bottom{
+	width:100%;
+	height:60px;
+}
+.bottom ul{
+	width:155px;
+	height:20px;
+    margin:0 auto;
+	position:relative;
+	top:20px;
+}
+.bottom li{
+	cursor:pointer;
+	margin-left:15px;
+	list-style-type:none;
+	float:left;
+	width:11px;
+	height:11px;
+	border-radius:50%;
+	background-color:#7f7b74;
+}
+
+
+.bottom-contain{
+	width:100%;
+	height:20px;
+
+}
+
+.bottom-line{
+	width:100%;
+	height:2px;
+	position:relative;
+	top:13px;
+	background-color:#928f8b;
+}
