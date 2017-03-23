@@ -6,6 +6,18 @@
         <link href="./first.css" rel="stylesheet" type="text/css">
     </head>
     <body>
+        <ul class="nav-con">
+            <li id="block1" class="block1"><img src="./img/left.png"><img src="./img/right.png"></li>
+            <li id="block2" class="block2"><img src="./img/left.png"><img src="./img/right.png"></li>
+            <li id="block3" class="block3"><img src="./img/left.png"><img src="./img/right.png"></li>
+            <li id="block4" class="block4"><img src="./img/left.png"><img src="./img/right.png"></li>
+            <li id="block5" class="block5"><img src="./img/left.png"><img src="./img/right.png"></li>
+            <li id="block6" class="block6"><img src="./img/left.png"><img src="./img/right.png"></li>
+            <li id="block7" class="block7"><img src="./img/left.png"><img src="./img/right.png"></li>
+
+        </ul>
+
+
         <div class="contain">
             <div class="top">
                 <div class="top-middle">
@@ -22,27 +34,33 @@
                 <div class="nav-contain">
                     <ul>
                         <!-- <img src="./img/nav.png"> -->
-                        <li>HOME</li>
-                        <li>PORTFOLIO</li>
-                        <li>FULL WIDTH</li>
-                        <li>ARCHIVES</li>
-                        <li>DROPS</li>
-                        <li>BLOG</li>
-                        <li>CONTACT</li>
+                        <li onmouseover="displ(this)" onmouseout="clea(this)" value="50">HOME</li>
+                        <li onmouseover="displ(this)" onmouseout="clea(this)" value="51">PORTFOLIO</li>
+                        <li onmouseover="displ(this)" onmouseout="clea(this)" value="52">FULL WIDTH</li>
+                        <li onmouseover="displ(this)" onmouseout="clea(this)" value="53">ARCHIVES</li>
+                        <li onmouseover="displ(this)" onmouseout="clea(this)" value="54">DROPS</li>
+                        <li onmouseover="displ(this)" onmouseout="clea(this)" value="55">BLOG</li>
+                        <li onmouseover="displ(this)" onmouseout="clea(this)" value="56">CONTACT</li>
                         <li><input type="text" value=""><img src="./img/search.png"></li>
                     </ul>
+
+                    
+
+
+
+                    
                 </div>
                 
             </div>
             <div class="image">
                <div id="img_ul" class="image-contain">
                     <img src="./img/fate-1.png" style="height:390px;width:1440px;">
+                    <!-- <img src="./img/fate-1.png" style="height:390px;width:1440px;">
                     <img src="./img/fate-1.png" style="height:390px;width:1440px;">
-                    <img src="./img/fate-1.png" style="height:390px;width:1440px;">
-                    <img src="./img/fate-1.png" style="height:390px;width:1440px;">
-                    <!-- <img src="./img/fate-2.png" style="height:390px;width:1440px;">
+                    <img src="./img/fate-1.png" style="height:390px;width:1440px;"> -->
+                    <img src="./img/fate-2.png" style="height:390px;width:1440px;">
                     <img src="./img/fate-3.png" style="height:390px;width:1440px;">
-                    <img src="./img/game-1.png" style="height:390px;width:1440px;"> -->
+                    <img src="./img/game-1.png" style="height:390px;width:1440px;">
                 </div>
             </div>
             <div class="bottom">
@@ -63,6 +81,39 @@
             
         </div>
     <script type="text/javascript">
+    function clea(jj){
+        block1.style.display = "none";
+        block2.style.display = "none";
+        block3.style.display = "none";
+        block4.style.display = "none";
+        block5.style.display = "none";
+        block6.style.display = "none";
+        block7.style.display = "none";
+    }
+    function displ(kk){
+
+       if(kk.value == "50"){
+           block1.style.display = "block";
+       }else if(kk.value == "51"){
+           block2.style.display = "block";
+       }else if(kk.value == "52"){
+           block3.style.display = "block";
+       }else if(kk.value == "53"){
+           block4.style.display = "block";
+       }else if(kk.value == "54"){
+           block5.style.display = "block";
+       }else if(kk.value == "55"){
+           block6.style.display = "block";
+       }else if(kk.value == "56"){
+           block7.style.display = "block";
+       }
+    
+    }
+    
+
+
+
+
     function ch_color1(){
         var c1 = $("c1");
         c1.style.backgroundColor = "#292317";
